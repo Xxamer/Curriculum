@@ -28,7 +28,7 @@ function changeToEs() {
 					'<li>Administración de redes locales Local network management</li>'+
 					'<li>Presupuestos de instalación para empresas Installation budgets for companies</li>'+
 					'<li>Curso de arduino con soldadura y programación básica del Arduino</li>'+
-					'<p>Todo realizado en el periodo de prácticas del grado medio de Sistemas Microinformáticos y Redes</p>'
+					'<p>Todo realizado en el periodo de prácticas del grado medio de Sistemas Microinformáticos y Redes en modalidad Erasmus donde tuve la oportunidad de ir a Dinamarca.</p>'
     );
     //Right side
     $("#others").html("Otros");

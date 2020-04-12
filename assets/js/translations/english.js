@@ -27,8 +27,8 @@ function changeToEn() {
             '<li>Hardware maintenance</li>' +
             '<li>Local network management</li>'+
             '<li>Installation budgets for companies</li>'+
-            '<li>Curso de arduino con soldadura y programación básica del Arduino</li>'+
-            '<p>Todo realizado en el periodo de prácticas del grado medio de Sistemas Microinformáticos y Redes</p>'
+            '<li>Arduino course with welding and basic Arduino programming</li>'+
+            '<p>Everything done during the training period of intermediate degree of Microcomputer Systems and Networks where I had the opportunity to go to Denmark for a part of a Erasmus project</p>'
     );
     $("#others").html("Others");
     //Right side
