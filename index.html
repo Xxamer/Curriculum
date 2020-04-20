@@ -26,11 +26,16 @@
 	<script src="assets/js/index.js"></script>
 	<script src="assets/js/translations/spanish.js"></script>
 	<script src="assets/js/translations/english.js"></script>
+	<!-- Convert to PDF -->
+	<script src="assets/js/pdf.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+	<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </head>
 
-<body>
-	
+<body class="pdf-convert">
+
 	<article class="resume-wrapper text-center position-relative">
+		<button class="btn button-converter ripple raised btn-warning">Convertir a PDF </button>
 		<select id="language_selector">
 			<option value="es">Español</option>
 			<option value="en">English</option>
@@ -73,29 +78,33 @@
 			</header>
 			<div class="resume-body p-5">
 				<section class="resume-section summary-section mb-5">
-					<h2 id="about_me" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">About me</h2>
+					<h2 id="about_me" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">About me
+					</h2>
 					<div class="resume-section-content">
 						<p id="about_me_text" class="mb-0"></p>
 					</div>
 				</section>
 				<section class="resume-section summary-section mb-5">
-					<h2 id="useful_information"  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"></h2>
+					<h2 id="useful_information" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					</h2>
 					<div id="useful_information_list" class="resume-section-content">
-						
+
 					</div>
 				</section>
 				<!--//summary-section-->
 				<div class="row">
 					<div class="col-lg-9">
-						  <section class="resume-section experience-section mb-5">
-							<h2 id="work_experience" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+						<section class="resume-section experience-section mb-5">
+							<h2 id="work_experience"
+								class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
 							</h2>
 							<div class="resume-section-content">
 								<div class="resume-timeline position-relative">
 									<article class="resume-timeline-item position-relative pb-5">
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class="job_title_fullstack resume-position-title font-weight-bold mb-1">
+												<h3
+													class="job_title_fullstack resume-position-title font-weight-bold mb-1">
 												</h3>
 												<div class="resume-company-name ml-auto">Elcrealrevolution.S.L</div>
 											</div>
@@ -104,9 +113,11 @@
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
-											<ul  id="elcreal_list">
+											<ul id="elcreal_list">
 											</ul>
-											<h4 class="technologies_used resume-timeline-item-desc-heading font-weight-bold"></h4>
+											<h4
+												class="technologies_used resume-timeline-item-desc-heading font-weight-bold">
+											</h4>
 											<ul class="list-inline">
 												<li class="list-inline-item"><span
 														class="badge badge-primary badge-pill">Laravel</span></li>
@@ -118,8 +129,8 @@
 														class="badge badge-primary badge-pill">PHP</span></li>
 												<li class="list-inline-item"><span
 														class="badge badge-primary badge-pill">Prestashop</span></li>
-														<li class="list-inline-item"><span
-															class="badge badge-primary badge-pill">Wordpress</span></li>
+												<li class="list-inline-item"><span
+														class="badge badge-primary badge-pill">Wordpress</span></li>
 
 											</ul>
 										</div>
@@ -130,7 +141,8 @@
 
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class="job_title_fullstack resume-position-title font-weight-bold mb-1">
+												<h3
+													class="job_title_fullstack resume-position-title font-weight-bold mb-1">
 												</h3>
 												<div class="resume-company-name ml-auto">Sirokko Open Source S.L</div>
 											</div>
@@ -140,9 +152,11 @@
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
 											<ul id="list_resume_sirokko">
-												
+
 											</ul>
-											<h4 class="technologies_used resume-timeline-item-desc-heading font-weight-bold"></h4>
+											<h4
+												class="technologies_used resume-timeline-item-desc-heading font-weight-bold">
+											</h4>
 											<ul class="list-inline">
 												<li class="list-inline-item"><span
 														class="badge badge-primary badge-pill">Angular</span></li>
@@ -164,8 +178,9 @@
 
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class=" job_title_itsupport resume-position-title font-weight-bold mb-1">
-													</h3>
+												<h3
+													class=" job_title_itsupport resume-position-title font-weight-bold mb-1">
+												</h3>
 												<div class="resume-company-name ml-auto">Tech College, Aalborg
 													(Denmark)</div>
 											</div>
@@ -176,9 +191,11 @@
 										<div class="resume-timeline-item-desc">
 
 											<ul id="list_resume_aalborg">
-												
+
 											</ul>
-											<h4 class="technologies_used resume-timeline-item-desc-heading font-weight-bold"></h4>
+											<h4
+												class="technologies_used resume-timeline-item-desc-heading font-weight-bold">
+											</h4>
 											<ul class="list-inline">
 												<li class="list-inline-item"><span
 														class="badge badge-primary badge-pill">Linux</span></li>
@@ -207,7 +224,9 @@
 					</div>
 					<div class="col-lg-3">
 						<section class="resume-section skills-section mb-5">
-							<h2 class=" technologies_used resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Technologies
+							<h2
+								class=" technologies_used resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								Technologies
 								used:</h2>
 							<div class="resume-section-content">
 								<div class="resume-skill-item">
@@ -293,7 +312,8 @@
 								<div class="resume-skill-item">
 									<h4 id="others" class="resume-skills-cat font-weight-bold">Others</h4>
 									<ul class="list-inline">
-										<li class="list-inline-item"><span class="badge badge-light">Prestashop</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Prestashop</span>
+										</li>
 										<li class="list-inline-item"><span class="badge badge-light">Scrum</span>
 										</li>
 										<li class="list-inline-item"><span class="badge badge-light">Git</span></li>
@@ -319,17 +339,19 @@
 						</section>
 						<!--skills-section-->
 						<section class="resume-section interests-section mb-5">
-							<h2 id="personal_skills_title" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+							<h2 id="personal_skills_title"
+								class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
 							</h2>
 							<div class="resume-section-content">
 								<ul id="personal_skills_list" class="list-unstyled">
-									
+
 								</ul>
 							</div>
 						</section>
 						<!-- Social Skills section-->
 						<section class="resume-section education-section mb-5">
-							<h2 id="education_title" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"></h2>
+							<h2 id="education_title"
+								class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"></h2>
 							<div class="resume-section-content">
 								<ul id="education_list" class="list-unstyled">
 									<li class="mb-2">
@@ -351,19 +373,21 @@
 						</section>
 						<!--interests-section-->
 						<section class="resume-section language-section mb-5">
-							<h2 id="language_title" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"></h2>
+							<h2 id="language_title"
+								class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"></h2>
 							<div class="resume-section-content">
 								<ul id="language_list" class="list-unstyled resume-lang-list">
-									
+
 								</ul>
 							</div>
 						</section>
 						<!--language-section-->
 						<section class="resume-section interests-section mb-5">
-							<h2 id="hobbies-title" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Aficiones</h2>
+							<h2 id="hobbies-title"
+								class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Aficiones</h2>
 							<div class="resume-section-content">
 								<ul id="hobbies-list" class="list-unstyled">
-									
+
 								</ul>
 							</div>
 						</section>
