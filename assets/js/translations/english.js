@@ -6,7 +6,7 @@ function changeToEn() {
     $('#about_me').html('About me');
     $('#about_me_text').html('I am a fullstack developer with a preference for web development that can be adapted to work environments in team or alone with a desire to learn.');
     $('#useful_information').html('Useful information');
-    $('#useful_information_list').html(' <ul> <li>Available to travel punctually or move around permanently for work.</li>  <li>Enrolled in the Youth Guarantee program.</li>  <li>Enrolled in Dual Inserted Training of the FULP (University Foundation of Las Palmas).</li></ul>');
+    $('#useful_information_list').html(' <ul> <li>Available to travel punctually or move around permanently for work.</li>  <li>Enrolled in the Youth Guarantee program.</li></ul>');
     //Job Timeline
     //General use
     //If you gonna use the same html to various tags, use classes instead of ID
@@ -15,6 +15,8 @@ function changeToEn() {
     $('.job_title_itsupport').html('IT Support and Networking');
     $('.technologies_used').html('Technologies used:');
     //Specific use
+    $('#sirokko_experience_2').html(' <li> Realization of multiple projects for external clients </li>');
+
     $('#elcreal_list').html(' <li>  Creation of development and production environments with Hyper-V Server on local servers.</li>' +
         '<li>Creation of a business management tool with a team of developers (PHP)</li>' +
         "<li>Development and design of the company's web pages. (PHP y Boostrap).</li > ");

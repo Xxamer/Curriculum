@@ -6,8 +6,7 @@ function changeToEs() {
     $('#about_me_text').html('Soy un desarrollador fullstack con preferencia por el desarrollo web que se puede adaptar a los entornos de trabajo tanto en equipo como en solitario y con muchas ganas de aprender.');
     $('#useful_information').html('Información extra');
     $('#useful_information_list').html(' <ul> <li>Disponible para viajar puntualmente o mudarme permanentemente por trabajo.</li>' +
-        '<li>Inscrito en el programa de garantía juvenil.</li>' +
-        '<li>Inscrito en el programa Dual Inserta de la FULP (University Foundation of Las Palmas).</li> </ul>');
+        '<li>Inscrito en el programa de garantía juvenil.</li>');
     //Job Timeline
     //General use
     //If you gonna use the same html to various tags, use classes instead of ID
@@ -16,6 +15,7 @@ function changeToEs() {
     $('.job_title_itsupport').html('Soporte IT y mantenimiento de redes');
     $('.technologies_used').html('Tecnologías usadas:');
     //Specific use
+    $('#sirokko_experience_2').html(' <li> Realización de múltiples proyectos para clientes externos </li>');
     $('#elcreal_list').html(' <li> Creación de entornos de desarrollo y producción con Hyper-V Server en servidores locales.</li>' +
         '<li>Creación de herramienta de gestión empresarial con un equipo de desarrolladores (PHP)</li>' +
         '<li>Desarrollo y diseño de las páginas web de la empresa. (PHP y Boostrap).</li>');
